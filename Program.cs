@@ -4,6 +4,23 @@
     {
         static void Main(string[] args)
         {
+            //Quinto Ejercicio
+            
+            int bases;
+            int height;
+
+            Console.WriteLine("Ingrese la base del rectangulo");
+            bases= int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la altura del rectangulo");
+            height= int.Parse(Console.ReadLine());
+
+            int perimeter = 2*bases + 2*height;
+            int area = bases * height;
+            Console.WriteLine("El perimetro es "+perimeter);
+            Console.WriteLine("El area del rectangulo es "+area);
+
+
+
             //Cuarto Ejercicio
             int primer, segundo, tercero;
 
@@ -42,6 +59,7 @@
 
             //Primer Ejercicio
             int n1;
+            Console.WriteLine("ingrese un numero");
             n1 = int.Parse(Console.ReadLine());
 
             n1++;
