@@ -4,13 +4,14 @@
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Hello, World!");
-            for (int i = 0; i < 10; i++) {
-                Console.WriteLine("index is equal to" + i);
-            }
 
-             int n1 = 2, n2 = 3;
+
+
+            int n1;
+            n1 = int.Parse(Console.ReadLine());
+
+            n1++;
+            Console.WriteLine(n1);
         }
     }
 }
