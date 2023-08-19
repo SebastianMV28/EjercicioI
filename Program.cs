@@ -16,7 +16,7 @@
 
             int perimeter = 2*bases + 2*height;
             int area = bases * height;
-            Console.WriteLine("El perimetro es "+perimeter);
+            Console.WriteLine("El perimetro del rectangulo es "+perimeter);
             Console.WriteLine("El area del rectangulo es "+area);
 
 
