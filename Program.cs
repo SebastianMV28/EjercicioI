@@ -4,13 +4,23 @@
     {
         static void Main(string[] args)
         {
+
+
+
             //Septimo Ejercicio
+            double cms, yardas, metros, pies, pulgadas;
 
-
-
-
-
-
+            Console.WriteLine("Ingrese los centimetros que desea convertir");
+            cms = double.Parse(Console.ReadLine());
+            metros = cms * 0.01;
+            yardas = cms * 0.0109361;
+            pies = cms * 0.0328084;
+            pulgadas = cms * 0.393701;
+            Console.WriteLine("El valor de los centimetros en pulgadas es " +(Math.Pow(pulgadas, 1)));
+            Console.WriteLine("El valor de los centimetros en metros es "+(Math.Pow(metros, 1)));
+            Console.WriteLine("El valor de los centimetros en yardas es " + (Math.Pow(yardas, 1)));
+            Console.WriteLine("El valor de los centimetros en pies es " + (Math.Pow(pies,1)));
+            
             //Sexto Ejercicio
 
             int radio, altura;
