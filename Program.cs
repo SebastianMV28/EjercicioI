@@ -4,6 +4,39 @@
     {
         static void Main(string[] args)
         {
+            //Decimo Ejercicio
+            int pNumber, sNumber;
+            Console.WriteLine("Ingrese el primer numero");
+            pNumber= int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero");
+            sNumber= int.Parse(Console.ReadLine());
+             if (sNumber % pNumber== 0) {
+                Console.WriteLine("Es divisible");
+            }
+            else
+            {
+                Console.WriteLine("No es divisible");
+            }
+
+
+
+            //Noveno Ejercicio
+            double hombres, mujeres;
+
+            Console.WriteLine("Ingrese la cantidad de hombres en el grupo");
+            hombres = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la cantidad de mujeres en el grupo");
+            mujeres = double.Parse(Console.ReadLine());
+            double grupoTotal= hombres+mujeres;
+
+
+            hombres = (hombres/grupoTotal)*100;
+            mujeres = (mujeres/grupoTotal)*100;
+
+            Console.WriteLine("El porcentaje de hombres es :"+ hombres+"%" +" y el porcentaje de mujeres es :"+ mujeres+"%");
+
+
+
             //Octavo Ejercicio
             double fahrenheit, celsius;
             Console.WriteLine("Ingrese la temperatura en grados Celsius");
@@ -36,14 +69,20 @@
             radio = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese la altura del cilindro");
             altura = int.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine("Ingrese un valor para radio mayor a 0");
+                radio = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese un valor para altura mayor a 0");
+                altura = int.Parse(Console.ReadLine());
+            } while (radio < 0|| altura< 0);
+
+
             double areaB = Math.PI*(Math.Pow(radio, 2));
 
             volumen = Math.Round(areaB* altura, 2);
             Console.WriteLine("El Volumen del area es " + volumen);
-
-
-
-
 
 
 
