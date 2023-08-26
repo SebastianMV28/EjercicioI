@@ -4,6 +4,12 @@
     {
         static void Main(string[] args)
         {
+            //Octavo Ejercicio
+            double fahrenheit, celsius;
+            Console.WriteLine("Ingrese la temperatura en grados Celsius");
+            celsius= double.Parse(Console.ReadLine());
+            fahrenheit = (celsius * 1.8) + 32;
+            Console.WriteLine("La temperatura convertida a Fahrenheit es de: "+ fahrenheit);
 
 
 
