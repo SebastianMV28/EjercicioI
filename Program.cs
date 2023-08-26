@@ -4,6 +4,33 @@
     {
         static void Main(string[] args)
         {
+            //Septimo Ejercicio
+
+
+
+
+
+
+            //Sexto Ejercicio
+
+            int radio, altura;
+            double volumen;
+
+            Console.WriteLine("Ingrese el radio del cilindro ");
+            radio = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la altura del cilindro");
+            altura = int.Parse(Console.ReadLine());
+            double areaB = Math.PI*(Math.Pow(radio, 2));
+
+            volumen = Math.Round(areaB* altura, 2);
+            Console.WriteLine("El Volumen del area es " + volumen);
+
+
+
+
+
+
+
             //Quinto Ejercicio
             
             int bases;
