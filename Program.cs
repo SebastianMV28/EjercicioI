@@ -26,8 +26,13 @@
 
             switch(userSelection){
                 case "1":
-                    
-        int opt1 = AddNumber();
+                    Console.WriteLine("ingrese un numero");
+
+                    int v = int.Parse(Console.ReadLine());
+                    int n= v;
+                    int opt1 = AddNumber(v);
+                   
+                    Console.WriteLine(v);
                     break;
                     case "2":
                      
@@ -54,8 +59,9 @@
                 break;case "10":
                     opt10= AddNumber();
                 break;
-            default;
-
+                default:
+                    Console.WriteLine("")
+                    ;
 
             };
 
@@ -65,14 +71,13 @@
 
     ///Methods///
 
-    static void AddNumber()
+    static int AddNumber(int x)
     {
-        int n1;
-        Console.WriteLine("ingrese un numero");
-        n1 = int.Parse(Console.ReadLine());
+        
+        
 
-        n1++;
-        Console.WriteLine(n1);
+        return x++;
+        
     };
 
     static void RandomPlusPorcent()
