@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) { 
 
 
             String userSelection = Console.ReadLine();
@@ -27,23 +27,18 @@
             switch(userSelection){
                 case "1":
                     
-        int opt1= AddNumber();
+        int opt1 = AddNumber();
                     break;
                     case "2":
-                     ;
+                     
         int opt2 = RandomPlusPorcent();
                 break;
                     case "3":
                         
-        int opt3= FifthyPorcentRandom();
+        int opt3 = FifthyPorcentRandom();
                         break;
                          case "4":
-                  int opt4= Prom();
-
-        int primer, segundo, tercero;
-        primer = int.Parse(Console.ReadLine());
-        segundo = int.Parse(Console.ReadLine());
-        tercero = int.Parse(Console.ReadLine());
+                  int opt4 = Prom();
         Console.writeLine(prom());
                     ;
                 break;case "5":
@@ -59,7 +54,7 @@
                 break;case "10":
                     opt10= AddNumber();
                 break;
-                default;
+            default;
 
 
             };
@@ -108,8 +103,11 @@
 
     static int Prom(int a, b, c)
     {
+        a = int.Parse(Console.ReadLine());
+        b = int.Parse(Console.ReadLine());
+        c = int.Parse(Console.ReadLine());
 
-        int prom = (primer + segundo + tercero) / 3;
+        int prom = (a + b + c) / 3;
         return prom;
     }
 
