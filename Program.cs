@@ -26,34 +26,37 @@
 
             switch(userSelection){
                 case "1":
-                    opt1= AddNumber();
-                break;case "1":
+                    int opt1;
+                   opt1= AddNumber();
+                    break;
+                    case "2":
+                     int opt2;
                     opt2= RandomPlusPorcent();
-                break;case "2":
-                    opt3= AddNumber();
-                break;case "3":
+                break;
+                        case "3":
+                        int opt3;
+                        opt3= AddNumber();
+                break;case "4":
                             opt4= Prom();
 
         int primer, segundo, tercero;
                     primer = int.Parse(Console.ReadLine());
                     segundo = int.Parse(Console.ReadLine());
                     tercero = int.Parse(Console.ReadLine());
-                        Console.writeLine(prom())
+                        Console.writeLine(prom());
                     ;
-                break;case "4":
-                    opt1= AddNumber();
                 break;case "5":
-                    opt1= AddNumber();
+                    opt5= AddNumber();
                 break;case "6":
-                    opt1= AddNumber();
+                    opt6= AddNumber();
                 break;case "7":
-                    opt1= AddNumber();
+                    opt7= AddNumber();
                 break;case "8":
-                    opt1= AddNumber();
+                    opt8= AddNumber();
                 break;case "9":
-                    opt1= AddNumber();
+                    opt9= AddNumber();
                 break;case "10":
-                    opt1= AddNumber();
+                    opt10= AddNumber();
                 break;
                 default;
 
