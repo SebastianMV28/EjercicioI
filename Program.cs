@@ -3,9 +3,123 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
-            //Decimo Ejercicio
-            int pNumber, sNumber;
+
+
+            String userSelection = Console.ReadLine();
+
+        //Menu//
+        Console.WriteLine("Please, select an option ");
+            Console.WriteLine("0");
+            Console.WriteLine("1");
+            Console.WriteLine("2");
+            Console.WriteLine("3");
+            Console.WriteLine("4");
+            Console.WriteLine("5");
+            Console.WriteLine("6");
+            Console.WriteLine("7");
+            Console.WriteLine("8");
+            Console.WriteLine("9");
+            Console.WriteLine("10");
+            Console.WriteLine("...........");
+            
+            //Switch//
+
+            switch(userSelection){
+                case "1":
+                    opt1= AddNumber();
+                break;case "1":
+                    opt2= RandomPlusPorcent();
+                break;case "2":
+                    opt3= AddNumber();
+                break;case "3":
+                            opt4= Prom();
+
+        int primer, segundo, tercero;
+                    primer = int.Parse(Console.ReadLine());
+                    segundo = int.Parse(Console.ReadLine());
+                    tercero = int.Parse(Console.ReadLine());
+                        Console.writeLine(prom())
+                    ;
+                break;case "4":
+                    opt1= AddNumber();
+                break;case "5":
+                    opt1= AddNumber();
+                break;case "6":
+                    opt1= AddNumber();
+                break;case "7":
+                    opt1= AddNumber();
+                break;case "8":
+                    opt1= AddNumber();
+                break;case "9":
+                    opt1= AddNumber();
+                break;case "10":
+                    opt1= AddNumber();
+                break;
+                default;
+
+
+            };
+
+
+
+
+
+    ///Methods///
+
+    static void AddNumber()
+    {
+        int n1;
+        Console.WriteLine("ingrese un numero");
+        n1 = int.Parse(Console.ReadLine());
+
+        n1++;
+        Console.WriteLine(n1);
+    };
+
+    static void RandomPlusPorcent()
+    {
+        Random rnd = new Random();
+        double percent = 1.3;
+
+        int nRandom = rnd.Next(0, 200);
+
+        double porcentaje = nRandom * percent;
+
+        Console.WriteLine(nRandom.ToString());
+        Console.WriteLine(porcentaje.ToString());
+    }
+          
+    static void FifthyPorcentRandom()
+    {
+        Random random = new Random();
+        int nRnd = random.Next(10, 50);
+
+        int fifteenPorcent = 15;
+        float finalPorcent = (nRnd * fifteenPorcent) / 100;
+        Console.WriteLine(nRnd);
+        Console.WriteLine(nRnd - finalPorcent);
+
+    }
+
+
+    static int Prom (int a, b, c)
+    {
+        
+        int prom = (primer + segundo + tercero) / 3;
+        return prom;
+    }
+
+
+
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////
+    //Decimo Ejercicio
+    int pNumber, sNumber;
             Console.WriteLine("Ingrese el primer numero");
             pNumber= int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el segundo numero");
